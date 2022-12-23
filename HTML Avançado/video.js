@@ -4,18 +4,18 @@ let bt1 = document.getElementsByClassName("bt")[1];
 let bt2 = document.getElementsByClassName("bt")[2];
 
 bt.addEventListener('click', function() {
-    maglore.setAttribute('controls',"");
+    maglore.setAttribute('abort','');
 
 })
 
 bt1.addEventListener('click', function() {
     maglore.play();
-    bt2.innerHTML = 'Pausar então';
+    
 
 })
 
 bt2.addEventListener('click', function() {
-    maglore.pause()
-    bt2.innerHTML = 'Mantra';
+    maglore.load()
+    
 
 })
